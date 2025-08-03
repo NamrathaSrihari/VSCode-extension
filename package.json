@@ -3,6 +3,10 @@
   "displayName": "gitCommitFun",
   "description": "Fun animations for git commit",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NamrathaSrihari/VSCode-extension.git#feature/git-commit-fun"
+  },
   "engines": {
     "vscode": "^1.102.0"
   },

@@ -1,65 +1,35 @@
-# gitCommitFun README
+# 🎉 gitCommitFun
 
-This is the README for your extension "gitCommitFun". After writing up a brief description, we recommend including the following sections.
+A fun and lightweight Visual Studio Code extension that celebrates your Git commits by displaying random cat GIFs or memes in a popup panel!
 
-## Features
+## ✨ Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Detects Git commits in any open repository
+- Opens a celebratory Webview panel when a commit is made
+- Displays a random cat GIF using the [TheCatAPI](https://thecatapi.com)
+- Works automatically on commit—no setup required!
 
-For example if there is an image subfolder under your extension project workspace:
+## 🐾 Demo
 
-\!\[feature X\]\(images/feature-x.png\)
+![demo gif](https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## 🚀 How to Use
 
-## Requirements
+1. Clone or download this repository.
+2. Open the folder in VS Code.
+3. Run the extension:
+   - Press `F5` to open a new Extension Development Host.
+   - Make a Git commit in any repository.
+4. Enjoy the surprise cat celebration!
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## 🛠️ Requirements
 
-## Extension Settings
+- Git must be installed and available in your PATH.
+- Your project must be a Git repository.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## 💡 How It Works
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension hooks into the Git extension API in VS Code. When a commit is made, it:
+- Listens for the `onDidCommit` event.
+- Fetches a random cat GIF.
+- Displays it in a Webview panel.
