@@ -14,13 +14,14 @@ A fun and lightweight Visual Studio Code extension that celebrates your Git comm
 ![demo gif](https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)
 
 ## 🚀 How to Use
+If you just want to use the extension:
 
-1. Clone or download this repository.
-2. Open the folder in VS Code.
-3. Run the extension:
-   - Press `F5` to open a new Extension Development Host.
-   - Make a Git commit in any repository.
-4. Enjoy the surprise cat celebration!
+1. Clone this repository or download the `.vsix` file.
+2. Open **Visual Studio Code**.
+3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS).
+4. Type and select: Extensions: Install from VSIX...
+5. Browse and select the `.vsix` file inside the project folder.
+6. ✅ Done! The extension will now celebrate your commits.
 
 ## 🛠️ Requirements
 
